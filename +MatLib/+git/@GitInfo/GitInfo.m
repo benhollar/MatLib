@@ -55,6 +55,9 @@ methods
     function obj = GitInfo(varargin)
         % A convenience constructor for the GitInfo class
         %
+        %obj = GitInfo()
+        %obj = GitInfo(reopPath)
+        %
         % Inputs:
         %   repoPath: (Optional) The path to a repository to query the info of. If not specified, an empty object is
         %       returned
@@ -62,7 +65,7 @@ methods
         
         repoPath = MatLib.util.parseInputs(varargin, []);
         if ~isempty(repoPath)
-            obj = obj.query(repoPath);
+            obj = GitInfo.query(repoPath);
         end
         
     end

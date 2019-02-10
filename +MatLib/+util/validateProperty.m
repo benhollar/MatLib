@@ -1,6 +1,10 @@
 function varargout = validateProperty(value, validClasses, validAttributes, varargin)
 % Validate an input
 %
+%validateProperty(value, validClasses, validAttributes)
+%validateProperty(value, validClasses, validAttributes, allowsEmpty)
+%value = validateProperty(...)
+%
 % This function forms a wrapper around MATLAB's built-in validateattributes function to conveniently check empty inputs
 % in addition to the normal validation.
 %

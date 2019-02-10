@@ -1,6 +1,8 @@
 function setDateStrFormat(obj, datestrFormat)
 % Update the formatting of date-related properties
 %
+%obj.setDateStrFormat(datestrFormat)
+%
 % Inputs:
 %   datestrFormat: A valid datestr format, as defined by MATLAB's datestr() function
 %

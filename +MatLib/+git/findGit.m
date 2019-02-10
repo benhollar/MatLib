@@ -1,6 +1,8 @@
 function gitPath = findGit()
 % Find the Git executable location
 %
+%gitPath = findGit()
+%
 % Outputs:
 %   gitPath: The path of the Git executable as a string; if not found, returns empty
 %

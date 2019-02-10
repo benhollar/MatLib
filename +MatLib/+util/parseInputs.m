@@ -1,6 +1,8 @@
 function varargout = parseInputs(inputs, varargin)
 % Parses optional inputs, matching omitted values to default values
 %
+%[...] = parseInputs(inputs, ...)
+%
 % This function is a bread-and-butter method to provide some sense of function overloading in MATLAB. Essentially, it
 % takes a cell of arbitrary values and number of default values. If a particular input doesn't exist or is empty, it is
 % matched to the default specified.

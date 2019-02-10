@@ -1,6 +1,9 @@
 function allFiles = searchDir(rootDir, varargin)
 % Search a directory for files
 %
+%allFiles = searchDir(rootDir)
+%allFiles = searchDir(rootDir, goodExt, doRecursion)
+%
 % Even though a number of good "better dir()" functions exist in the world, I typically use my own unless I need
 % something super fancy. This function performs a search through a directory for files. Optionally, the search can be
 % tailored mildly.

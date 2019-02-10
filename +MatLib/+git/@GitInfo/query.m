@@ -1,6 +1,8 @@
 function obj = query(repoPath)
 % Peform the query of a Git repo
 %
+%obj = GitInfo.query(repoPath)
+%
 % This function populates the values of a GitInfo object and returns the object it creates. The information is retrieved
 % from several different git commands.
 %

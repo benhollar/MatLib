@@ -1,6 +1,8 @@
 function tf = checkIsGitRepo(repoPath)
 % A simple helper function to check if a filepath points to a Git repository
 %
+%tf = checkIsGitRepo(repoPath)
+%
 % Inputs:
 %   repoPath: The filepath to the folder to check
 %

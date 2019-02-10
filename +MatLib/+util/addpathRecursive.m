@@ -1,9 +1,13 @@
-function addpathRecursive(folder, root)
+function addpathRecursive(folder, varargin)
 % As the name suggests, adds folders (and their subfolders) to the MATLAB path recursively.
+%
+%addpathRecursive(folder)
+%addpathRecursive(folder, root)
 %
 % Inputs:
 %   folder: folder to add
-%   root: typically, the folder above the folder, which should already be on the MATLAB path.
+%   root: (Optional) typically, the folder above the folder, which should already be on the MATLAB path. If not
+%       specified, defaults to the value of `folder`
 %
 
 % **********************************************************************************************************************
@@ -13,10 +17,9 @@ function addpathRecursive(folder, root)
 
 
 import MatLib.util.addpathRecursive
+import MatLib.util.parseInputs
 
-if ~exist('root', 'var')
-    root = folder;
-end
+root = parseInputs(varargin, folder);
 
 foldersToAdd = dir(folder);
 isDir = [foldersToAdd.isdir];
