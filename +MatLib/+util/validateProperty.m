@@ -27,6 +27,9 @@ function varargout = validateProperty(value, validClasses, validAttributes, vara
 allowsEmpty = MatLib.util.parseInputs(varargin, true);
 
 if allowsEmpty && isempty(value)
+    if nargout > 0
+        varargout{1} = value;
+    end
     return
 end
 
