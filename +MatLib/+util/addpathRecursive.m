@@ -48,5 +48,3 @@ for idx = 1:length(foldersToAdd)
     addpathRecursive(foldersToAdd(idx).name, foldersToAdd(idx).name);
     addpath(fullfile(root, foldersToAdd(idx).name));
 end
-
-end
