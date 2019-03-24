@@ -11,7 +11,7 @@ function allFiles = searchDir(rootDir, varargin)
 % Inputs:
 %   rootDir: The root filepath to begin the search
 %   goodExt: (Optional) A cell of strings specifiying extensions to search for. Defaults to empty (all files)
-%   doRecursion: (Optional) A logical indicating if the search should recurse on subfolders
+%   doRecursion: (Optional) A logical indicating if the search should recurse on subfolders. Defaults true
 %
 % Outputs:
 %   allFiles: The list of files found, as full system filepaths
@@ -35,7 +35,6 @@ doRecursion = MatLib.util.validateProperty(doRecursion, {'logical'}, {'scalar'})
 
 % Intialize our file list; hard to preallocate here, no known number of files to return
 allFiles = {};
-
 
 %% Do the search 
 % Effectively, search each directory until out of directories to search.
