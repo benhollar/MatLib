@@ -65,7 +65,7 @@ methods
         
         repoPath = MatLib.util.parseInputs(varargin, []);
         if ~isempty(repoPath)
-            obj = GitInfo.query(repoPath);
+            obj = MatLib.git.GitInfo.query(repoPath);
         end
         
     end
