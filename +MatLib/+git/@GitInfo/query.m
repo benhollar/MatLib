@@ -87,7 +87,7 @@ obj.lastModifiedAuthor = strjoin(authorLine(2:3), ' ');
 % The date is on the third line, and has an interesting (but still usable) format ('Date: ...')
 commitDate = strtrim(strsplit(output{3}));
 commitDate = datenum(strjoin(commitDate(2:end-1), ' '), 'ddd mmm dd HH:MM:SS yyyy');
-obj.lastModifiedDate = datestr(commitDate, 'yyyy-mm-dd HH:MM:SS');
+obj.lastModifiedDate = datestr(commitDate, obj.datestrFormat);
 
 
 %% Helper Functions
